@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>动态端口 | 新 V2Ray 白话文指南</title>
+    <meta name="description" content="你没有见过的船新版本">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.76ede355.css" as="style"><link rel="preload" href="/assets/js/app.58341468.js" as="script"><link rel="preload" href="/assets/js/2.dc6bbfd2.js" as="script"><link rel="preload" href="/assets/js/8.8320db6a.js" as="script"><link rel="prefetch" href="/assets/js/10.c9b1008a.js"><link rel="prefetch" href="/assets/js/11.08435c99.js"><link rel="prefetch" href="/assets/js/12.1397392d.js"><link rel="prefetch" href="/assets/js/13.6602236a.js"><link rel="prefetch" href="/assets/js/14.af22022f.js"><link rel="prefetch" href="/assets/js/15.7f205cc2.js"><link rel="prefetch" href="/assets/js/16.28c77db0.js"><link rel="prefetch" href="/assets/js/17.8c9fef08.js"><link rel="prefetch" href="/assets/js/18.fba5507f.js"><link rel="prefetch" href="/assets/js/19.bc37fd2b.js"><link rel="prefetch" href="/assets/js/20.e7392eaf.js"><link rel="prefetch" href="/assets/js/21.7f65f1c6.js"><link rel="prefetch" href="/assets/js/22.4ccad1a0.js"><link rel="prefetch" href="/assets/js/23.31490881.js"><link rel="prefetch" href="/assets/js/24.627b2316.js"><link rel="prefetch" href="/assets/js/25.df91dc1f.js"><link rel="prefetch" href="/assets/js/26.64a8315a.js"><link rel="prefetch" href="/assets/js/27.c3be4440.js"><link rel="prefetch" href="/assets/js/28.8cf15965.js"><link rel="prefetch" href="/assets/js/29.bf1755a6.js"><link rel="prefetch" href="/assets/js/3.c3bfa197.js"><link rel="prefetch" href="/assets/js/30.f9b391fb.js"><link rel="prefetch" href="/assets/js/31.ea42501c.js"><link rel="prefetch" href="/assets/js/32.b5d9a9a7.js"><link rel="prefetch" href="/assets/js/33.06a18fdc.js"><link rel="prefetch" href="/assets/js/34.381e0545.js"><link rel="prefetch" href="/assets/js/35.c12f31de.js"><link rel="prefetch" href="/assets/js/36.f342dec8.js"><link rel="prefetch" href="/assets/js/37.1d49fe2e.js"><link rel="prefetch" href="/assets/js/38.45506b4e.js"><link rel="prefetch" href="/assets/js/39.005e181b.js"><link rel="prefetch" href="/assets/js/4.239b62c0.js"><link rel="prefetch" href="/assets/js/40.7086f352.js"><link rel="prefetch" href="/assets/js/41.27584921.js"><link rel="prefetch" href="/assets/js/42.c5bb691b.js"><link rel="prefetch" href="/assets/js/43.ea783c01.js"><link rel="prefetch" href="/assets/js/44.53f050f4.js"><link rel="prefetch" href="/assets/js/45.6622c8a5.js"><link rel="prefetch" href="/assets/js/46.5fd5febd.js"><link rel="prefetch" href="/assets/js/47.572eaaa3.js"><link rel="prefetch" href="/assets/js/48.c9178445.js"><link rel="prefetch" href="/assets/js/49.bae4dcdc.js"><link rel="prefetch" href="/assets/js/5.fad348e6.js"><link rel="prefetch" href="/assets/js/50.34efb59d.js"><link rel="prefetch" href="/assets/js/51.52845546.js"><link rel="prefetch" href="/assets/js/52.d599deab.js"><link rel="prefetch" href="/assets/js/53.9d0e6e21.js"><link rel="prefetch" href="/assets/js/54.4ce05493.js"><link rel="prefetch" href="/assets/js/55.a7df10a7.js"><link rel="prefetch" href="/assets/js/56.fa876e81.js"><link rel="prefetch" href="/assets/js/57.0c51437f.js"><link rel="prefetch" href="/assets/js/58.2bbb5189.js"><link rel="prefetch" href="/assets/js/59.a55a9799.js"><link rel="prefetch" href="/assets/js/6.30c04a82.js"><link rel="prefetch" href="/assets/js/60.09de6ffe.js"><link rel="prefetch" href="/assets/js/61.dd734411.js"><link rel="prefetch" href="/assets/js/62.4a157e07.js"><link rel="prefetch" href="/assets/js/63.25ade49f.js"><link rel="prefetch" href="/assets/js/64.bb7e9269.js"><link rel="prefetch" href="/assets/js/65.9be876a5.js"><link rel="prefetch" href="/assets/js/66.bb1c6960.js"><link rel="prefetch" href="/assets/js/67.39b95e1e.js"><link rel="prefetch" href="/assets/js/68.3272bf4a.js"><link rel="prefetch" href="/assets/js/69.e2e9645b.js"><link rel="prefetch" href="/assets/js/7.333d9419.js"><link rel="prefetch" href="/assets/js/70.37a704cf.js"><link rel="prefetch" href="/assets/js/71.7099801c.js"><link rel="prefetch" href="/assets/js/72.b64853e9.js"><link rel="prefetch" href="/assets/js/73.20e6b1ce.js"><link rel="prefetch" href="/assets/js/74.8da269e2.js"><link rel="prefetch" href="/assets/js/75.0434a20b.js"><link rel="prefetch" href="/assets/js/76.68abbb81.js"><link rel="prefetch" href="/assets/js/77.0e2f286a.js"><link rel="prefetch" href="/assets/js/78.c4ca7e0d.js"><link rel="prefetch" href="/assets/js/79.c28a0820.js"><link rel="prefetch" href="/assets/js/80.6302d656.js"><link rel="prefetch" href="/assets/js/81.1c098b6d.js"><link rel="prefetch" href="/assets/js/82.0501ff93.js"><link rel="prefetch" href="/assets/js/83.e3ea593c.js"><link rel="prefetch" href="/assets/js/84.380774a4.js"><link rel="prefetch" href="/assets/js/85.45e0655e.js"><link rel="prefetch" href="/assets/js/86.58825ec1.js"><link rel="prefetch" href="/assets/js/87.4701a675.js"><link rel="prefetch" href="/assets/js/88.19383e33.js"><link rel="prefetch" href="/assets/js/89.09aec2aa.js"><link rel="prefetch" href="/assets/js/9.beb5bb84.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.76ede355.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">新 V2Ray 白话文指南</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="https://v2fly.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  官方手册
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/advanced/dynamicport.html" class="nav-link router-link-exact-active router-link-active">zh-CN</a></li><li class="dropdown-item"><!----> <a href="/en_US/advanced/dynamicport.html" class="nav-link">en-US</a></li><li class="dropdown-item"><!----> <a href="/fa/" class="nav-link">fa-IR</a></li><li class="dropdown-item"><!----> <a href="/ko_KR/" class="nav-link">ko-KR</a></li><li class="dropdown-item"><!----> <a href="/ru_RU/" class="nav-link">ru-RU</a></li><li class="dropdown-item"><!----> <a href="/vi_VN/" class="nav-link">vi-VN</a></li><li class="dropdown-item"><!----> <a href="/fr_FR/" class="nav-link">fr-FR</a></li></ul></div></div> <a href="https://github.com/v2fly/v2ray-step-by-step" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="https://v2fly.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  官方手册
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/advanced/dynamicport.html" class="nav-link router-link-exact-active router-link-active">zh-CN</a></li><li class="dropdown-item"><!----> <a href="/en_US/advanced/dynamicport.html" class="nav-link">en-US</a></li><li class="dropdown-item"><!----> <a href="/fa/" class="nav-link">fa-IR</a></li><li class="dropdown-item"><!----> <a href="/ko_KR/" class="nav-link">ko-KR</a></li><li class="dropdown-item"><!----> <a href="/ru_RU/" class="nav-link">ru-RU</a></li><li class="dropdown-item"><!----> <a href="/vi_VN/" class="nav-link">vi-VN</a></li><li class="dropdown-item"><!----> <a href="/fr_FR/" class="nav-link">fr-FR</a></li></ul></div></div> <a href="https://github.com/v2fly/v2ray-step-by-step" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前言</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/" class="sidebar-link">V2Ray 配置指南</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/prep/prep" class="sidebar-heading clickable"><span>开篇</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/basics/basics" class="sidebar-heading clickable"><span>基本篇</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/advanced/advanced" class="sidebar-heading clickable open"><span>高级篇</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/advanced/mux.html" class="sidebar-link">Mux</a></li><li><a href="/advanced/mkcp.html" class="sidebar-link">mKCP</a></li><li><a href="/advanced/dynamicport.html" class="active sidebar-link">动态端口</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/advanced/dynamicport.html#基本动态端口" class="sidebar-link">基本动态端口</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/advanced/dynamicport.html#服务器配置" class="sidebar-link">服务器配置</a></li><li class="sidebar-sub-header"><a href="/advanced/dynamicport.html#客户端配置" class="sidebar-link">客户端配置</a></li></ul></li><li class="sidebar-sub-header"><a href="/advanced/dynamicport.html#动态端口使用-mkcp" class="sidebar-link">动态端口使用 mKCP</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/advanced/dynamicport.html#服务器配置-2" class="sidebar-link">服务器配置</a></li><li class="sidebar-sub-header"><a href="/advanced/dynamicport.html#客户端配置-2" class="sidebar-link">客户端配置</a></li></ul></li></ul></li><li><a href="/advanced/outboundproxy.html" class="sidebar-link">代理转发</a></li><li><a href="/advanced/httpfake.html" class="sidebar-link">HTTP 伪装</a></li><li><a href="/advanced/tls.html" class="sidebar-link">TLS</a></li><li><a href="/advanced/websocket.html" class="sidebar-link">WebSocket</a></li><li><a href="/advanced/wss_and_web.html" class="sidebar-link">WebSocket+TLS+Web</a></li><li><a href="/advanced/h2.html" class="sidebar-link">HTTP/2</a></li><li><a href="/advanced/cdn.html" class="sidebar-link">CDN</a></li><li><a href="/advanced/traffic.html" class="sidebar-link">流量统计</a></li><li><a href="/advanced/not_recommend.html" class="sidebar-link">不推荐的配置</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/app/app" class="sidebar-heading clickable"><span>应用篇</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/routing/routing" class="sidebar-heading clickable"><span>路由</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="动态端口"><a href="#动态端口" aria-hidden="true" class="header-anchor">#</a> 动态端口</h1> <p>V2Ray 提供了一个叫动态端口的功能。顾名思义，就是可以动态变化通信端口，该功能的初衷是为了应对电信服务运营商可能会对长时间大流量的单个端口进行限速。也许是用的人比较少，到目前为止没有证据可以动态端口对于科学上网是加分项还是减分项。</p> <h2 id="基本动态端口"><a href="#基本动态端口" aria-hidden="true" class="header-anchor">#</a> 基本动态端口</h2> <p>服务器 inbound 的端口作为主端口，在 inboundDetour 开动态监听的端口，客户端不用额外设定，客户端会先与服务器的主端口通信协商下一个使用的端口号。</p> <h3 id="服务器配置"><a href="#服务器配置" aria-hidden="true" class="header-anchor">#</a> 服务器配置</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;inbounds&quot;</span><span class="token punctuation">:</span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> <span class="token comment">//主端口配置</span>
+      <span class="token string">&quot;port&quot;</span><span class="token punctuation">:</span> <span class="token number">37192</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;protocol&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;vmess&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;settings&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;clients&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token string">&quot;id&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;d17a1af7-efa5-42ca-b7e9-6a35282d737f&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;alterId&quot;</span><span class="token punctuation">:</span> <span class="token number">64</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;detour&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">//绕行配置，即指示客户端使用 dynamicPort 的配置通信</span>
+          <span class="token string">&quot;to&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;dynamicPort&quot;</span>   
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;protocol&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;vmess&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;port&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;10000-20000&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 端口范围</span>
+      <span class="token string">&quot;tag&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;dynamicPort&quot;</span><span class="token punctuation">,</span>  <span class="token comment">// 与上面的 detour to 相同</span>
+      <span class="token string">&quot;settings&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;default&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;alterId&quot;</span><span class="token punctuation">:</span> <span class="token number">64</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;allocate&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>            <span class="token comment">// 分配模式</span>
+        <span class="token string">&quot;strategy&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;random&quot;</span><span class="token punctuation">,</span>  <span class="token comment">// 随机开启</span>
+        <span class="token string">&quot;concurrency&quot;</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>      <span class="token comment">// 同时开放两个端口,这个值最大不能超过端口范围的 1/3</span>
+        <span class="token string">&quot;refresh&quot;</span><span class="token punctuation">:</span> <span class="token number">3</span>           <span class="token comment">// 每三分钟刷新一次</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="客户端配置"><a href="#客户端配置" aria-hidden="true" class="header-anchor">#</a> 客户端配置</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;outbounds&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;protocol&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;vmess&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;settings&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;vnext&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token string">&quot;address&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;1.2.3.4&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;port&quot;</span><span class="token punctuation">:</span> <span class="token number">37192</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;users&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">{</span>
+                <span class="token string">&quot;id&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;d17a1af7-efa5-42ca-b7e9-6a35282d737f&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;alterId&quot;</span><span class="token punctuation">:</span> <span class="token number">64</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="动态端口使用-mkcp"><a href="#动态端口使用-mkcp" aria-hidden="true" class="header-anchor">#</a> 动态端口使用 mKCP</h2> <p>在对应的 inbounds 和 outbounds 加入 streamSettings 并将 network 设置为 kcp 即可。</p> <h3 id="服务器配置-2"><a href="#服务器配置-2" aria-hidden="true" class="header-anchor">#</a> 服务器配置</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;inbounds&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;port&quot;</span><span class="token punctuation">:</span> <span class="token number">37192</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;protocol&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;vmess&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;settings&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;clients&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token string">&quot;id&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;d17a1af7-efa5-42ca-b7e9-6a35282d737f&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;level&quot;</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;alterId&quot;</span><span class="token punctuation">:</span> <span class="token number">64</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;detour&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>        
+          <span class="token string">&quot;to&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;dynamicPort&quot;</span>   
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;streamSettings&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;network&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;kcp&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;protocol&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;vmess&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;port&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;10000-20000&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 端口范围</span>
+      <span class="token string">&quot;tag&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;dynamicPort&quot;</span><span class="token punctuation">,</span>       
+      <span class="token string">&quot;settings&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;default&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;level&quot;</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;alterId&quot;</span><span class="token punctuation">:</span> <span class="token number">32</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;allocate&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>            <span class="token comment">// 分配模式</span>
+        <span class="token string">&quot;strategy&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;random&quot;</span><span class="token punctuation">,</span>  <span class="token comment">// 随机开启</span>
+        <span class="token string">&quot;concurrency&quot;</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>      <span class="token comment">// 同时开放两个端口</span>
+        <span class="token string">&quot;refresh&quot;</span><span class="token punctuation">:</span> <span class="token number">3</span>           <span class="token comment">// 每三分钟刷新一次</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;streamSettings&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;network&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;kcp&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="客户端配置-2"><a href="#客户端配置-2" aria-hidden="true" class="header-anchor">#</a> 客户端配置</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;outbounds&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;protocol&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;vmess&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;settings&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;vnext&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token string">&quot;address&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;1.2.3.4&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;port&quot;</span><span class="token punctuation">:</span> <span class="token number">37192</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;users&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">{</span>
+                <span class="token string">&quot;id&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;d17a1af7-efa5-42ca-b7e9-6a35282d737f&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;alterId&quot;</span><span class="token punctuation">:</span> <span class="token number">64</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;streamSettings&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;network&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;kcp&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <h4 id="更新历史"><a href="#更新历史" aria-hidden="true" class="header-anchor">#</a> 更新历史</h4> <ul><li>2018-01-06 删除错误且不必要的部分</li> <li>2018-11-17 V4.0+ 配置</li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/v2fly/v2ray-step-by-step/edit/transifex/zh_CN/advanced/dynamicport.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2019/7/9 下午12:04:23</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/advanced/mkcp.html" class="prev">
+          mKCP
+        </a></span> <span class="next"><a href="/advanced/outboundproxy.html">
+          代理转发
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.58341468.js" defer></script><script src="/assets/js/2.dc6bbfd2.js" defer></script><script src="/assets/js/8.8320db6a.js" defer></script>
+  </body>
+</html>
